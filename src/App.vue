@@ -1,19 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div id="app">111</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from "./components/HelloWorld.vue";
+
+// import { createPromiseDialog } from "@/utils/createPromiseDialog";
+
+// const dialog = createPromiseDialog(HelloWorld);
+
+import dialog from "./components/HelloWorld.dialog";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "App",
+  mounted() {
+    dialog();
   }
-}
+};
 </script>
 
 <style>
